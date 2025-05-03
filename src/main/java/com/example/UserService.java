@@ -3,10 +3,10 @@ package com.example;
 public class UserService {
 
     public void displayUserGreeting(String userId) {
-        // Feature branch change: Add logging
+        // Combined changes: Logging from feature, updated greeting from develop
         String user = findUserById(userId);
-        System.out.println("INFO: Displaying greeting for user " + userId); // Added logging
-        System.out.println("Hello, " + user + "!"); // Kept original greeting
+        System.out.println("INFO: Displaying greeting for user " + userId); // Kept logging
+        System.out.println("Welcome back, " + user + "!"); // Kept updated greeting
     }
     
     private String findUserById(String userId) {
