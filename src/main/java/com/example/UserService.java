@@ -3,9 +3,9 @@ package com.example;
 public class UserService {
 
     public void displayUserGreeting(String userId) {
-        // Initial greeting logic
+        // Updated greeting logic on develop branch
         String user = findUserById(userId);
-        System.out.println("Hello, " + user + "!");
+        System.out.println("Welcome back, " + user + "!"); // Changed "Hello" to "Welcome back"
     }
 
     private String findUserById(String userId) {
