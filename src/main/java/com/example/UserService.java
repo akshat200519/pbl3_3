@@ -3,11 +3,12 @@ package com.example;
 public class UserService {
 
     public void displayUserGreeting(String userId) {
-        // Initial greeting logic
+        // Feature branch change: Add logging
         String user = findUserById(userId);
-        System.out.println("Hello, " + user + "!");
+        System.out.println("INFO: Displaying greeting for user " + userId); // Added logging
+        System.out.println("Hello, " + user + "!"); // Kept original greeting
     }
-
+    
     private String findUserById(String userId) {
         // Dummy implementation
         return "User_" + userId;
